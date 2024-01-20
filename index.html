@@ -472,6 +472,7 @@
     </main>
 
     <!-- FOOTER -->
+    
 
  <footer class="footer">
 
@@ -522,7 +523,7 @@
         </ul>
      </div>
 
-<!-------footer form------->
+    <!-- Footer form -->
 
    <form class="footer-form">
       <p class="footer-form-title">Subscribe</p>
@@ -544,6 +545,8 @@
     </div>
    </form>
      
+     <!-- Modal window  -->
+
   <div class="modal">
     <div class="backdrop is-open"></div>
     <div class="modal-window">
@@ -561,8 +564,9 @@
               class="modal-input" 
               type="text" 
               name="name" 
+              id="name"
               required
-              id="name"/>
+              />
 
               <svg class="name-icon" width="18" height="18">
                  <use href="./images/icons.svg#icon-person"></use>
@@ -575,21 +579,21 @@
                class="modal-input" 
                type="tel" 
                name="phone" 
-               required
                id="phone" 
+               required
                />
          
              <svg class="modal-icon" width="18" height="24">
                  <use href="./images/icons.svg#icon-phone"></use>
              </svg>
          </div>         
-             <label class="label-text" for="email">Email</label>
+             <label class="label-text" for="modal-email">Email</label>
              <div class="modal-input-wrap">
                  <input 
                   class="modal-input" 
-                  type="tel" 
-                  name="email" 
-                  id="email" 
+                  type="email" 
+                  name="modal-email" 
+                  id="modal-email" 
                   />
              
                  <svg class="modal-icon" width="18" height="24">
