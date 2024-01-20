@@ -105,7 +105,7 @@ p {
 }
 
 .nav-list-item {
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link {
@@ -630,7 +630,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-
+/* -------footer button------- */
 
 .footer-form-btn {
     display: inline-flex;
@@ -653,6 +653,13 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background: var(--IRIS, #4D5AE5);
     cursor: pointer;
     border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #404BBF;
 }
  
 /* -----footer modal----- */
@@ -681,17 +688,20 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .modal-window {
     position: relative;
-    width: 408px;
-    height: 584px;
+    min-width: 408px;
+    min-height: 584px;
+    padding: 24px;
     border-radius: 4px;
     z-index: 2;
     background: var(--DAIRY, #FCFCFC);
 }
 
 .modal-close-btn {
-    position: absolute;
+    /* position: absolute;
     top: 24px;
-    right: 24px;
+    right: 24px; */
+    margin-left: auto;
+    margin-bottom: 24px;
     display: block;
     width: 24px;
     height: 24px;
@@ -705,11 +715,9 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .modal-title {
     min-width: 360px;
-    margin-top: 72px;
-    font-family: Roboto;
     text-align: center;
+    padding-bottom: 16px;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.32px;
@@ -719,11 +727,11 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer-modal {
     display: flex;
     flex-direction: column;
-    padding: 0 24px;
 }
 
 .label-text {
     margin-bottom: 4px;
+    margin-top: 8px;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.48px;
@@ -736,14 +744,11 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
     height: 40px;
     padding: 0 38px;
-    flex-shrink: 0;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
 }
 
-.modal-input-wrap {
-    display: flex;
-    gap: 8px;
+.modal-input-wrap {   
     position: relative;
 }
 
@@ -763,32 +768,38 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 /* -----textarea----- */
 
-/* .textarea-text {
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.48px;
-    color: var(--LIGHT-SLATE, #8E8F99);
-} */
-
 .textarea-input {
     width: 360px;
     height: 120px;
     flex-shrink: 0;
     padding: 8px 16px;
+    margin-bottom: 16px;
+
     border-radius: 4px;
-    border: 1px solid  rgba(46, 47, 66, 0.40);
+    border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
 }
 
 .textarea-input::placeholder {
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.48px;
     color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    
+        /* Small Text */
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+        /* 116.667% */
+        letter-spacing: 0.48px;
+}
+
+.checkbox-input-wrap {
+
 }
 
 .check-input {
     width: 16px;
     height: 16px;
+    margin-right: 8px;
     flex-shrink: 0;
     border: 1px solid rgba(46, 47, 66, 0.40);
 }
@@ -799,4 +810,26 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     letter-spacing: 0.48px;
     text-decoration-line: underline;
     color: var(--IRIS, #4D5AE5);
+}
+
+/* -----modal button------ */
+
+.modal-btn {
+    display: block;
+    text-align: center;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 169px;
+    padding: 16px 32px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;    
+    color: var(--WHITE, #FFF);
+   
+    border-radius: 4px;
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
