@@ -259,7 +259,7 @@ p {
     margin-right: auto;
 }
 
-.visibility-hidden {
+.visually-hidden {
    visibility: hidden;
    display: none;
    position: absolute;
@@ -864,7 +864,7 @@ p {
     border: transparent;
 }
 
-.check-input:checked .check {
+.check-input:checked+.label-text span {
     fill: var(--OCEAN, #404BBF);
 }
 
