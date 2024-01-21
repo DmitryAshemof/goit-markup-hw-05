@@ -865,7 +865,7 @@ p {
 }
 
 .check-input:checked+.label-text span {
-    fill: var(--OCEAN, #404BBF);
+    fill: var(--OCEAN, #d9d9d9);
 }
 
 .check {
