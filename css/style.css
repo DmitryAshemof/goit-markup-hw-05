@@ -860,8 +860,11 @@ p {
 
 .check-input:checked + .label-text span {
     background-color: #404BBF;
-    fill: var(--OCEAN, #404BBF);
     border: transparent;
+}
+
+.check-input:checked .check {
+    fill: var(--OCEAN, #404BBF);
 }
 
 .check {
