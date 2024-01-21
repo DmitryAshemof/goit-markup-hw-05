@@ -695,6 +695,9 @@ p {
 
 .modal-window {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
     width: 408px;
     min-height: 584px;
     padding: 72px 24px 24px 24px;
@@ -715,7 +718,9 @@ p {
     justify-content: center;
     align-items: center;
     position: absolute;
+    margin-left: auto;
     top: 24px;
+    right: 24px;
     left: 24px;
     padding: 0;
     width: 24px;
@@ -741,7 +746,7 @@ p {
 .modal-title {
     min-width: 360px;
     text-align: center;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -800,12 +805,12 @@ p {
     position: relative;
 }
 
-.name-icon {
+/* .name-icon {
     position: absolute;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-}
+} */
 
 
 .modal-icon {
@@ -813,6 +818,7 @@ p {
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
