@@ -641,7 +641,7 @@ p {
     height: 40px;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    /* gap: 16px; */
     color: var(--WHITE, #FFF);
     text-align: center;
     padding: 0 24px;
@@ -752,7 +752,7 @@ p {
     display: block;
     align-items: center;
     margin-bottom: 4px;
-    margin-top: 8px;
+    /* margin-top: 8px; */
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -879,7 +879,7 @@ p {
 .modal-btn {
     display: block;
     text-align: center;
-    margin-top: 24px;
+    /* margin-top: 24px; */
     margin-left: auto;
     margin-right: auto;
     min-width: 169px;
